@@ -1,11 +1,19 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { CuerpoComponent } from './cuerpo/cuerpo.component';
-import { EncabezadoComponent } from './encabezado/encabezado.component';
+
+import { APP_ROUTING } from "./app.routes";
+import { EncabezadoComponent } from "./components/encabezado/encabezado.component";
+import { CuerpoComponent } from './components/cuerpo/cuerpo.component';
+
+import { SegundolinkComponent } from "./components/segundolink/segundolink.component";
+
+import { AppComponent } from "./app.component";
+import { HeaderComponent } from "./components/header/header.component";
+import { FooterComponent } from "./components/footer/footer.component";
+import { Pagina2Component } from './components/pagina2/pagina2.component';
+
+
 
 @NgModule({
   declarations: [
@@ -13,12 +21,12 @@ import { EncabezadoComponent } from './encabezado/encabezado.component';
     HeaderComponent,
     FooterComponent,
     CuerpoComponent,
-    EncabezadoComponent
+    EncabezadoComponent,
+    SegundolinkComponent,
+    Pagina2Component
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, APP_ROUTING],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

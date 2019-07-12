@@ -6,12 +6,12 @@ import { APP_ROUTING } from "./app.routes";
 import { EncabezadoComponent } from "./components/encabezado/encabezado.component";
 import { CuerpoComponent } from './components/cuerpo/cuerpo.component';
 
-import { SegundolinkComponent } from "./components/segundolink/segundolink.component";
 
 import { AppComponent } from "./app.component";
 import { HeaderComponent } from "./components/header/header.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { Pagina2Component } from './components/pagina2/pagina2.component';
+import { Pagina1Component } from './components/pagina1/pagina1.component';
 
 
 
@@ -22,8 +22,8 @@ import { Pagina2Component } from './components/pagina2/pagina2.component';
     FooterComponent,
     CuerpoComponent,
     EncabezadoComponent,
-    SegundolinkComponent,
-    Pagina2Component
+    Pagina2Component,
+    Pagina1Component
   ],
   imports: [BrowserModule, APP_ROUTING],
   providers: [],

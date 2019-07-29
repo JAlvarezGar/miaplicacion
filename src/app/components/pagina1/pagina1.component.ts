@@ -9,12 +9,20 @@ import { PruebaService } from '../../servicios/prueba.service';
 })
 export class Pagina1Component implements OnInit {
 
+  peliculas: any[] = [];
+
+  // CON ESTE CONSTRUCTOR IMPORTAMOS EL SERVICIO
   // tslint:disable-next-line: variable-name
-  constructor(private _miservicio1: PruebaService) {
+  constructor(private _miServicio1: PruebaService) {
 
   }
 
   ngOnInit() {
+  
+    this.peliculas = this._miServicio1.getPeliculas();
+
+    console.log(this.peliculas);
+    
   }
 
 }

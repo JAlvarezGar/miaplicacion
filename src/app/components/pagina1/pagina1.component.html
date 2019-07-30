@@ -1,6 +1,12 @@
 <h1>PAGINA 1</h1>
 <div class="container">
-
-    <img src="./assets/images/fondo1.png" alt=" " />
-
+    <div class="card" style="width: 18rem;" *ngFor="let film of peli">
+        <img src="..." class="card-img-top" alt="Aquí va una imagen" />
+        <div class="card-body">
+            <h5 class="card-title">{{ film.pelicula }}</h5>
+            <p class="card-text">director: {{ film.director }}</p>
+            <p class="card-text">Año: {{ film.anio }}</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
 </div>

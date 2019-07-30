@@ -9,7 +9,8 @@ import { PruebaService } from '../../servicios/prueba.service';
 })
 export class Pagina1Component implements OnInit {
 
-  peliculas: any[] = [];
+  // creo una variable array "peli" vacia
+  peli: any[] = [];
 
   // CON ESTE CONSTRUCTOR IMPORTAMOS EL SERVICIO
   // tslint:disable-next-line: variable-name
@@ -18,11 +19,9 @@ export class Pagina1Component implements OnInit {
   }
 
   ngOnInit() {
-  
-    this.peliculas = this._miServicio1.getPeliculas();
 
-    console.log(this.peliculas);
-    
+    this.peli = this._miServicio1.getPeliculas();
+
   }
 
 }

@@ -1,0 +1,9 @@
+#estante {
+    width: 200px;
+    transition: width 0.8s, border-radius 0.5s;
+}
+
+#estante:hover {
+    border-radius: 50%;
+    width: 400px;
+}

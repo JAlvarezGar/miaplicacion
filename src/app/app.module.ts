@@ -9,7 +9,7 @@ import { CuerpoComponent } from './components/cuerpo/cuerpo.component';
 
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
+import { HeaderComponent } from './components/navbar/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { Pagina2Component } from './components/pagina2/pagina2.component';
 import { Pagina1Component } from './components/pagina1/pagina1.component';
